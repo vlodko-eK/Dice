@@ -1,0 +1,63 @@
+/*ОБЩИЕ ЭЛЕМЕНТЫ
+
+Пустая грань кубика, общая для всех его сторон (заготовка). В этот класс я "загнал" все общие элементы граней кубика */
+.side {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #000;
+    padding: 10px;  
+    box-sizing: border-box;
+    margin: 1%;
+    border-radius: 20px; 
+}
+
+/* Точки на грянях кубика */
+.dot {    
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%
+}
+
+/* Дополнительный блок для точек в несколько рядов для граней с 5-ю, 6-ю и 4-мя точками */
+.add_dots_block {
+    display: flex; 
+    justify-content: space-between;
+}
+
+/*Выравнивающий по цетру блок. Используется для размещения трех горизонтально расположенных граней, грани с одной точкой и цетральной точки для грани с 5-ю точками */
+.centering_block {
+    display: flex;
+    Justify-content: center;
+}
+/*==============ВСЕ ОБЩИЕ ЭЛЕМЕНТЫ ГОТОВЫ!===================*/
+
+/*ГРАНИ С 6-ю и 4-мя ТОЧКАМИ. Просто ставим ее по центру*/
+._6_4{
+    margin: 1% auto;
+}
+/*ГРАНЬ С 2-мя ТОЧКАМИ. Использование псевдо-класса + align-self, чтобы переместить нижнюю точку в правый нихний угол. */
+    ._2 .dot:nth-of-type(2){
+        align-self: flex-end;
+}
+/*ГРАНЬ С 3-мя ТОЧКАМИ
+     Использование псевдо-класса + align-self, чтобы поставить вторую точку в центр грани*/
+    ._3 .dot:nth-of-type(2){
+        align-self: center;
+    }
+    
+    /* Использование псевдо-класса + align-self, чтобы переместить третью точку в правый нихний угол*/
+    ._3 .dot:nth-of-type(3){
+        align-self: flex-end;
+}
+/*С ГРАНЬЮ С 5-ю ТОЧКАМИ ничего делать не надо */
+/*Размещение точки для стороны с 1-й точкой по центру грани*/
+._1 {
+    Justify-content: center;
+    align-items: center;
+    margin: 1% auto;
+}
