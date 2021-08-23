@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Тестовый проект «Игральные кости»" />
+    <meta name="keywords" content="Игральные кости, Dice,  CSS, Flex" />
+    <title>Тестовий проект «Игральные кости»</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>  
+</head>
+<body>
+<!-- Грань с 6-ю точками -->
+        <div class="side _6_4">
+        <!-- Разбитие 6 точек на 3 блока по 2 точки -->
+            <div class="add_dots_block">
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            
+            <div class="add_dots_block">
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>  
+            <div class="add_dots_block">
+              <span class="dot"></span>
+              <span class="dot"></span>
+           </div>    
+        </div>
+ <!-- Блок для граней с 2-мя, 5-ю и 3-мя точками -->      
+    <div class="centering_block">
+    <!-- Грань с 2-мя точками -->           
+            <div class="side _2">
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+                        
+<!-- Грань с 5-ю точками -->            
+        <!-- LOVE IT! Использование уже готового класса, для всей грани --> 
+            <div class="side">
+             <!-- Разбитие 5 точек на 3 блока: 2-1-2 -->
+                <div class="add_dots_block">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                  </div>   
+      <!-- LOVE IT! Использование уже готового класса, для цетральной точки -->              
+                   <div class="centering_block">
+                      <span class="dot"></span>
+                   </div>  
+                   
+                   <div class="add_dots_block">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                   </div>
+            </div>
+  <!-- Грань с 3-мя точками -->             
+              <div class="side _3">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+            </div>
+    </div>
+<!-- Грань с 4-мя точками -->    
+        <!-- LOVE IT! Использование уже готового CSS-стиля, как и для 6-ти точек -->    
+        <div class="side _6_4">
+            <div class="add_dots_block">
+              <span class="dot"></span>
+              <span class="dot"></span>              
+            </div>
+            
+            <div class="add_dots_block">
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>      
+        </div>
+<!--Грань с одной точкой -->        
+          <div class="centering_block"> 
+            <div class="side _1">
+              <span class="dot"></span>
+            </div> 
+          </div>  
+</body>  
+</html>
